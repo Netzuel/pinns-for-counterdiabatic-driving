@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "Please cite the published paper when using this software or its scientific method."
+title: "Quantum PINN for counterdiabatic driving"
+type: software
+authors:
+  - family-names: Ferrer-Sánchez
+    given-names: Antonio
+license: BSD-3-Clause-Clear
+repository-code: "https://github.com/Netzuel/pinns-for-counterdiabatic-driving"
+version: "1.0.0"
+identifiers:
+  - type: doi
+    value: "10.1088/2632-2153/ad450f"
+    description: "Article"
+  - type: other
+    value: "arXiv:2309.04434"
+    description: "Preprint"
+preferred-citation:
+  type: article
+  title: "Physics-informed neural networks for an optimal counterdiabatic quantum computation"
+  authors:
+    - family-names: Ferrer-Sánchez
+      given-names: Antonio
+    - family-names: Flores-Garrigos
+      given-names: Carlos
+    - family-names: Hernani-Morales
+      given-names: Carlos
+    - family-names: Orquín-Marqués
+      given-names: José J
+    - family-names: Hegade
+      given-names: Narendra N
+    - family-names: Gomez Cadavid
+      given-names: Alejandro
+    - family-names: Montalban
+      given-names: Iraitz
+    - family-names: Solano
+      given-names: Enrique
+    - family-names: Vives-Gilabert
+      given-names: Yolanda
+    - family-names: Martín-Guerrero
+      given-names: José D
+  journal: "Machine Learning: Science and Technology"
+  volume: "5"
+  issue: "2"
+  start: "025035"
+  year: 2024
+  doi: "10.1088/2632-2153/ad450f"

@@ -1,0 +1,428 @@
+{
+ "description": "Named training configurations. 'paper/' follows the settings stated in the article; 'retained/' follows the historical scripts that produced the bundled trajectories; 'scalability/' repeats the article's collocation study with its stated 500000 updates. Unlisted fields take the RunConfig defaults: width 30, learning rate 1e-5, seed 7, float32, CPU.",
+ "experiments": {
+  "smoke": {
+   "system": "h2",
+   "distance": 1.0,
+   "width": 16,
+   "hidden_layers": 3,
+   "collocation": 32,
+   "steps": 30,
+   "learning_rate": 0.0001,
+   "weights": "paper"
+  },
+  "paper/h2-d1.0": {
+   "system": "h2",
+   "distance": 1.0,
+   "hidden_layers": 6,
+   "collocation": 2048,
+   "steps": 500000,
+   "weights": "paper",
+   "snapshot_steps": [
+    15000,
+    25000,
+    75000
+   ]
+  },
+  "retained/h2-d1.0": {
+   "system": "h2",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 2048,
+   "steps": 500001,
+   "weights": "retained"
+  },
+  "retained/h2-d1.5": {
+   "system": "h2",
+   "distance": 1.5,
+   "hidden_layers": 7,
+   "collocation": 2048,
+   "steps": 300001,
+   "weights": "retained"
+  },
+  "retained/h2-d2.0": {
+   "system": "h2",
+   "distance": 2.0,
+   "hidden_layers": 7,
+   "collocation": 2048,
+   "steps": 300001,
+   "weights": "retained"
+  },
+  "retained/h2-d2.5": {
+   "system": "h2",
+   "distance": 2.5,
+   "hidden_layers": 7,
+   "collocation": 2048,
+   "steps": 300001,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.0-n00128": {
+   "system": "h2",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 128,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.0-n00256": {
+   "system": "h2",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 256,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.0-n00512": {
+   "system": "h2",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 512,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.0-n01024": {
+   "system": "h2",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 1024,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.0-n02048": {
+   "system": "h2",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 2048,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.0-n04096": {
+   "system": "h2",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 4096,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.0-n08192": {
+   "system": "h2",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 8192,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.0-n16384": {
+   "system": "h2",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 16384,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.5-n00128": {
+   "system": "h2",
+   "distance": 1.5,
+   "hidden_layers": 7,
+   "collocation": 128,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.5-n00256": {
+   "system": "h2",
+   "distance": 1.5,
+   "hidden_layers": 7,
+   "collocation": 256,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.5-n00512": {
+   "system": "h2",
+   "distance": 1.5,
+   "hidden_layers": 7,
+   "collocation": 512,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.5-n01024": {
+   "system": "h2",
+   "distance": 1.5,
+   "hidden_layers": 7,
+   "collocation": 1024,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.5-n02048": {
+   "system": "h2",
+   "distance": 1.5,
+   "hidden_layers": 7,
+   "collocation": 2048,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.5-n04096": {
+   "system": "h2",
+   "distance": 1.5,
+   "hidden_layers": 7,
+   "collocation": 4096,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.5-n08192": {
+   "system": "h2",
+   "distance": 1.5,
+   "hidden_layers": 7,
+   "collocation": 8192,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d1.5-n16384": {
+   "system": "h2",
+   "distance": 1.5,
+   "hidden_layers": 7,
+   "collocation": 16384,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.0-n00128": {
+   "system": "h2",
+   "distance": 2.0,
+   "hidden_layers": 7,
+   "collocation": 128,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.0-n00256": {
+   "system": "h2",
+   "distance": 2.0,
+   "hidden_layers": 7,
+   "collocation": 256,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.0-n00512": {
+   "system": "h2",
+   "distance": 2.0,
+   "hidden_layers": 7,
+   "collocation": 512,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.0-n01024": {
+   "system": "h2",
+   "distance": 2.0,
+   "hidden_layers": 7,
+   "collocation": 1024,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.0-n02048": {
+   "system": "h2",
+   "distance": 2.0,
+   "hidden_layers": 7,
+   "collocation": 2048,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.0-n04096": {
+   "system": "h2",
+   "distance": 2.0,
+   "hidden_layers": 7,
+   "collocation": 4096,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.0-n08192": {
+   "system": "h2",
+   "distance": 2.0,
+   "hidden_layers": 7,
+   "collocation": 8192,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.0-n16384": {
+   "system": "h2",
+   "distance": 2.0,
+   "hidden_layers": 7,
+   "collocation": 16384,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.5-n00128": {
+   "system": "h2",
+   "distance": 2.5,
+   "hidden_layers": 7,
+   "collocation": 128,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.5-n00256": {
+   "system": "h2",
+   "distance": 2.5,
+   "hidden_layers": 7,
+   "collocation": 256,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.5-n00512": {
+   "system": "h2",
+   "distance": 2.5,
+   "hidden_layers": 7,
+   "collocation": 512,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.5-n01024": {
+   "system": "h2",
+   "distance": 2.5,
+   "hidden_layers": 7,
+   "collocation": 1024,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.5-n02048": {
+   "system": "h2",
+   "distance": 2.5,
+   "hidden_layers": 7,
+   "collocation": 2048,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.5-n04096": {
+   "system": "h2",
+   "distance": 2.5,
+   "hidden_layers": 7,
+   "collocation": 4096,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.5-n08192": {
+   "system": "h2",
+   "distance": 2.5,
+   "hidden_layers": 7,
+   "collocation": 8192,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d2.5-n16384": {
+   "system": "h2",
+   "distance": 2.5,
+   "hidden_layers": 7,
+   "collocation": 16384,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d3.0-n00128": {
+   "system": "h2",
+   "distance": 3.0,
+   "hidden_layers": 7,
+   "collocation": 128,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d3.0-n00256": {
+   "system": "h2",
+   "distance": 3.0,
+   "hidden_layers": 7,
+   "collocation": 256,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d3.0-n00512": {
+   "system": "h2",
+   "distance": 3.0,
+   "hidden_layers": 7,
+   "collocation": 512,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d3.0-n01024": {
+   "system": "h2",
+   "distance": 3.0,
+   "hidden_layers": 7,
+   "collocation": 1024,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d3.0-n02048": {
+   "system": "h2",
+   "distance": 3.0,
+   "hidden_layers": 7,
+   "collocation": 2048,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d3.0-n04096": {
+   "system": "h2",
+   "distance": 3.0,
+   "hidden_layers": 7,
+   "collocation": 4096,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d3.0-n08192": {
+   "system": "h2",
+   "distance": 3.0,
+   "hidden_layers": 7,
+   "collocation": 8192,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/h2-d3.0-n16384": {
+   "system": "h2",
+   "distance": 3.0,
+   "hidden_layers": 7,
+   "collocation": 16384,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/lih-d1.0-n00128": {
+   "system": "lih",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 128,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/lih-d1.0-n00256": {
+   "system": "lih",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 256,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/lih-d1.0-n00512": {
+   "system": "lih",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 512,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/lih-d1.0-n01024": {
+   "system": "lih",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 1024,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/lih-d1.0-n02048": {
+   "system": "lih",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 2048,
+   "steps": 500000,
+   "weights": "retained"
+  },
+  "scalability/lih-d1.0-n04096": {
+   "system": "lih",
+   "distance": 1.0,
+   "hidden_layers": 7,
+   "collocation": 4096,
+   "steps": 500000,
+   "weights": "retained"
+  }
+ }
+}

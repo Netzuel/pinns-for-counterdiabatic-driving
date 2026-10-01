@@ -1,0 +1,21 @@
+Data, trained models, and figures
+
+The Clear BSD License at the repository root applies to the software and its
+documentation. The files in this directory are distributed under the same
+licence, with the following attribution requirements and notices.
+
+- hamiltonians.h5: molecular qubit Hamiltonians generated with Qiskit for the
+  article. Qiskit is distributed under the Apache License 2.0; the numerical
+  matrices are research data of the article.
+- pretrained/*.pt and results/*: training outputs of the article's research code.
+- figures/*: generated from these data by the scripts in src/.
+
+When using or redistributing these files, cite
+
+  A. Ferrer-Sánchez et al., "Physics-informed neural networks for an optimal
+  counterdiabatic quantum computation", Machine Learning: Science and
+  Technology 5, 025035 (2024). https://doi.org/10.1088/2632-2153/ad450f
+
+The article itself is published under the Creative Commons Attribution 4.0
+licence. The method is the subject of a patent application; see PATENTS.md at
+the repository root. No patent rights are granted.

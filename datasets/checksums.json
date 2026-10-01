@@ -1,0 +1,12 @@
+{
+  "experiments.json": "b34febec0320e55fa73a83c42fbf55bf3f3ef16997ea37fc7c6ad261a6412ab4",
+  "hamiltonians.h5": "1b5f939c0a36fb7bbc1ae9bda5904c276f104413fbb83ade7d921d77b20cda75",
+  "pretrained/h2-d1.0.pt": "5ddbd81a94cfa3bf8d289e269fa6b5a096725699fc5722e61e76509a92ce5a2b",
+  "pretrained/h2-d1.5.pt": "fd6e2ffa3bc0b4f171b431f635d633d49b30515ca95097b8bc52acb6c072ed8b",
+  "pretrained/h2-d2.0.pt": "fcb012f7443b6e43ce2073f058c55e39724b0c1e9fab21654a139e36065f5365",
+  "pretrained/h2-d2.5.pt": "b64d6e8d22bc12272bda7cf02fc697a9e1f530476452149b1429e6f5e2fd52e2",
+  "pretrained/h2-d3.0.pt": "dfd31567ad321dd9d46713cf49d89100737e8a0b0fcde0b970d159dc7554307f",
+  "pretrained/lih-d1.0.pt": "106d45cf002aab6f7afff9663875e90bf33751d78703deff488e1ae2ea11f2cc",
+  "results/h2-trajectories.h5": "d2f7d6cd9ab1e7c4b7cb4599f76ab3fdb1ff07ddceb67eb626063b76edf1cac6",
+  "results/scalability.csv": "f26b87dd25f1a1e4a53e37c54cf2909447840e9b9319e4bf02e893d0e3ab5d31"
+}

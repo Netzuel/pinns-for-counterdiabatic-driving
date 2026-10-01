@@ -1,0 +1,219 @@
+{
+  "distances": {
+    "1.0": {
+      "checks": {
+        "schedule_start": 6.91048551715312e-09,
+        "schedule_end": 1.0,
+        "initial_hamiltonian_error": 2.858111187721963e-05,
+        "final_hamiltonian_error": 0.0,
+        "counterdiabatic_start": 2.8581110377809963e-05,
+        "counterdiabatic_end": 0.0,
+        "counterdiabatic_peak": 0.2285485393905359,
+        "hermiticity_error": 0.016460379158195964,
+        "xy_yx_relative_error": 0.008228021661360618
+      },
+      "final_spectrum_real": [
+        -1.1011503802844669,
+        -0.7458717823028563,
+        -0.35229063034057595,
+        0.039047626615443226
+      ],
+      "final_spectrum_imag_max": 0.0,
+      "exact_ground_energy": -1.1011503802844667,
+      "final_energy": -1.1011503779032805,
+      "relative_error_percent": 2.162453176051977e-07,
+      "ground_population": 0.9999999978617412,
+      "minimum_ground_population": 0.9999999916413711,
+      "without_cd_final_energy": -1.0694150771082411,
+      "without_cd_ground_population": 0.9721669507219756,
+      "time_averaged_coefficients": {
+        "II": -0.007321,
+        "IX": -3e-06,
+        "IY": -2e-06,
+        "IZ": 0.011236,
+        "XI": -5e-06,
+        "XX": 0.00864,
+        "XY": 0.087245,
+        "XZ": 8e-06,
+        "YI": -7e-06,
+        "YX": -0.088905,
+        "YY": -0.00383,
+        "YZ": 2e-06,
+        "ZI": -0.010271,
+        "ZX": 4e-06,
+        "ZY": -1e-05,
+        "ZZ": -0.015018
+      }
+    },
+    "1.5": {
+      "checks": {
+        "schedule_start": 3.248914914877332e-09,
+        "schedule_end": 1.0,
+        "initial_hamiltonian_error": 3.198965618728269e-05,
+        "final_hamiltonian_error": 0.0,
+        "counterdiabatic_start": 3.1989640467856736e-05,
+        "counterdiabatic_end": 0.0,
+        "counterdiabatic_peak": 0.5076592484941511,
+        "hermiticity_error": 0.010315494361000231,
+        "xy_yx_relative_error": 0.008562127781863391
+      },
+      "final_spectrum_real": [
+        -0.9981493353810834,
+        -0.8905847668647766,
+        -0.4315128922462462,
+        -0.30719250440926094
+      ],
+      "final_spectrum_imag_max": 0.0,
+      "exact_ground_energy": -0.9981493353810833,
+      "final_energy": -0.9981492517725412,
+      "relative_error_percent": 8.376356034715269e-06,
+      "ground_population": 0.9999993234831964,
+      "minimum_ground_population": 0.9999993234831964,
+      "without_cd_final_energy": -0.9131009965306379,
+      "without_cd_ground_population": 0.8769122983206419,
+      "time_averaged_coefficients": {
+        "II": 0.007337,
+        "IX": 0.000295,
+        "IY": 0.000115,
+        "IZ": 0.002533,
+        "XI": -0.000292,
+        "XX": 0.009447,
+        "XY": 0.18324,
+        "XZ": 0.000107,
+        "YI": 0.00013,
+        "YX": -0.179987,
+        "YY": -0.005077,
+        "YZ": -0.00023,
+        "ZI": -0.002027,
+        "ZX": 0.000107,
+        "ZY": 0.000315,
+        "ZZ": -0.023042
+      }
+    },
+    "2.0": {
+      "checks": {
+        "schedule_start": 1.8549365377040772e-09,
+        "schedule_end": 0.9999998807907104,
+        "initial_hamiltonian_error": 3.6897612328702773e-05,
+        "final_hamiltonian_error": 0.00014581397091134715,
+        "counterdiabatic_start": 3.689760977095811e-05,
+        "counterdiabatic_end": 0.00014581405565918058,
+        "counterdiabatic_peak": 1.3314252630074357,
+        "hermiticity_error": 0.013091917149722576,
+        "xy_yx_relative_error": 0.0030389751917991293
+      },
+      "final_spectrum_real": [
+        -0.9486575272039279,
+        -0.9245483111486591,
+        -0.4062644875241386,
+        -0.3764431099056693
+      ],
+      "final_spectrum_imag_max": 2.6181281013327e-06,
+      "exact_ground_energy": -0.9486411200596369,
+      "final_energy": -0.9486339395083342,
+      "relative_error_percent": 0.0007569302184807565,
+      "ground_population": 0.9997140489864812,
+      "minimum_ground_population": 0.9997140489864812,
+      "without_cd_final_energy": -0.7851350805413516,
+      "without_cd_ground_population": 0.7142547955252306,
+      "time_averaged_coefficients": {
+        "II": -0.27661,
+        "IX": -0.01539,
+        "IY": 0.005412,
+        "IZ": 0.017584,
+        "XI": -0.003723,
+        "XX": 0.087495,
+        "XY": 0.282367,
+        "XZ": -0.004863,
+        "YI": -0.001954,
+        "YX": -0.283818,
+        "YY": -0.052977,
+        "YZ": -0.017085,
+        "ZI": -0.018171,
+        "ZX": 0.001688,
+        "ZY": -0.005581,
+        "ZZ": 0.047416
+      }
+    },
+    "2.5": {
+      "checks": {
+        "schedule_start": 0.000250220880843699,
+        "schedule_end": 0.9999972581863403,
+        "initial_hamiltonian_error": 1.1483675692681208e-05,
+        "final_hamiltonian_error": 0.0001871450371276256,
+        "counterdiabatic_start": 7.331373302818386e-05,
+        "counterdiabatic_end": 0.00018713653324147004,
+        "counterdiabatic_peak": 2.7621042984823814,
+        "hermiticity_error": 0.0017381757497787476,
+        "xy_yx_relative_error": 0.008231178284442928
+      },
+      "final_spectrum_real": [
+        -0.9360555098040287,
+        -0.931639436969242,
+        -0.3672215759516868,
+        -0.3612999112545396
+      ],
+      "final_spectrum_imag_max": 1.5162225217293723e-06,
+      "exact_ground_energy": -0.9360549456847241,
+      "final_energy": -0.9360252127913796,
+      "relative_error_percent": 0.003176404705897302,
+      "ground_population": 0.9988819331850127,
+      "minimum_ground_population": 0.9988819331850127,
+      "without_cd_final_energy": -0.7036428725709478,
+      "without_cd_ground_population": 0.5956376871942347,
+      "time_averaged_coefficients": {
+        "II": 0.068628,
+        "IX": -0.030142,
+        "IY": 0.007721,
+        "IZ": -0.001348,
+        "XI": -0.050845,
+        "XX": 0.011121,
+        "XY": 0.340737,
+        "XZ": -0.008426,
+        "YI": -0.002451,
+        "YX": -0.337356,
+        "YY": -0.022212,
+        "YZ": -0.026349,
+        "ZI": 0.002436,
+        "ZX": 0.015742,
+        "ZY": -0.00291,
+        "ZZ": 0.035863
+      }
+    }
+  },
+  "notes": [
+    "Energies in hartree; hbar = 1; t in [0, 1].",
+    "Propagation: DOP853, rtol 1e-10, atol 1e-12, piecewise-linear H(t) on every fifth stored sample (2000 points), initial state = ground state of H_initial.",
+    "relative_error_percent compares <H_final> at t = 1 with the exact ground energy.",
+    "Eigenvectors are columns of H(t = 1) sorted by real eigenvalue, phase-fixed so the largest component is real and positive."
+  ],
+  "final_eigenvectors_d1.0": {
+    "real": [
+      [
+        -0.0,
+        0.984514,
+        -0.175308,
+        -0.0
+      ],
+      [
+        -0.707107,
+        -0.0,
+        -0.0,
+        0.707107
+      ],
+      [
+        0.707107,
+        -0.0,
+        -0.0,
+        0.707107
+      ],
+      [
+        -0.0,
+        0.175308,
+        0.984514,
+        -0.0
+      ]
+    ],
+    "imag_max": 0.0
+  }
+}

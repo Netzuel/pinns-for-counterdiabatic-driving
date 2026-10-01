@@ -1,0 +1,14 @@
+{
+  "description": "Loss terms of the pretrained h2-d1.0 model on 64 scrambled Sobol times (seed 3), computed with the original research implementation (QPINN_complex_Pauli) and article weights (1e3, 1e3, 1e2, 0.5, 250).",
+  "pretrained": "h2-d1.0",
+  "sobol_seed": 3,
+  "collocation": 64,
+  "terms": {
+    "initial": 1.7641972362980596e-06,
+    "final": 0.0,
+    "least_action": 3.806414679274894e-05,
+    "schedule_rate": 0.4882281422615051,
+    "pauli": 9.170026169158518e-05,
+    "total": 0.488359659910202
+  }
+}

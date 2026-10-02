@@ -5,21 +5,21 @@ Code, data, and trained models accompanying
 *Machine Learning: Science and Technology* **5**, 025035 (2024)
 ([arXiv:2309.04434](https://arxiv.org/abs/2309.04434)), are collected here.
 
-In counterdiabatic driving, the term $\dot\lambda(t)A_{\mathrm{CD}}(t)$ is
+In counterdiabatic driving, the term $`\dot\lambda(t)A_{\mathrm{CD}}(t)`$ is
 added to an adiabatic Hamiltonian, and with it a quantum state tracks the
 instantaneous ground state even under fast evolution. What fixes this term is
-the adiabatic gauge potential $A_{\mathrm{CD}}$, and for many-body systems that
+the adiabatic gauge potential $`A_{\mathrm{CD}}`$, and for many-body systems that
 potential is hard to compute. In this work one physics-informed neural network
 (PINN), whose only input is time, learns all of the following at once:
 
-- the scheduling function $\lambda(t)$,
-- the gauge potential $A_{\mathrm{CD}}(t)$ as a complex matrix,
-- the expansion coefficients $C_\mu(t)$ of $A_{\mathrm{CD}}$ over Pauli
+- the scheduling function $`\lambda(t)`$,
+- the gauge potential $`A_{\mathrm{CD}}(t)`$ as a complex matrix,
+- the expansion coefficients $`C_\mu(t)`$ of $`A_{\mathrm{CD}}`$ over Pauli
   strings.
 
 The method uses no reference solutions. Both the boundary conditions and the
 variational (least-action) condition on the gauge potential are written into
-the loss, and nothing has to be diagonalised. The main example is the H$_2$
+the loss, and nothing has to be diagonalised. The main example is the H₂
 molecule in the STO-3G basis on two qubits, and the scaling study adds LiH on
 four qubits.
 
@@ -33,17 +33,17 @@ four qubits.
 
 The total Hamiltonian is
 
-$$
+```math
 H(t)=\underbrace{\bigl(1-\lambda(t)\bigr)H_{\mathrm{initial}}+\lambda(t)H_{\mathrm{final}}}_{H_{\mathrm{AD}}(t)}+\dot\lambda(t)A_{\mathrm{CD}}(t),
 \qquad t\in[0,1].
-$$
+```
 
-Five weighted terms make up the loss: the endpoint conditions $\lambda(0)=0$,
-$\lambda(1)=1$, $H(0)=H_{\mathrm{initial}}$, $H(1)=H_{\mathrm{final}}$; the
+Five weighted terms make up the loss: the endpoint conditions $`\lambda(0)=0`$,
+$`\lambda(1)=1`$, $`H(0)=H_{\mathrm{initial}}`$, $`H(1)=H_{\mathrm{final}}`$; the
 least-action residual
-$\bigl[i\,\partial_\lambda H_{\mathrm{AD}}-[A_{\mathrm{CD}},H_{\mathrm{AD}}],H_{\mathrm{AD}}\bigr]=0$;
-a penalty on $\dot\lambda^2$; and a term that matches $A_{\mathrm{CD}}$ to
-$\sum_\mu C_\mu P_\mu$. Each definition, weight, and normalisation in the code
+$`\bigl[i\,\partial_\lambda H_{\mathrm{AD}}-[A_{\mathrm{CD}},H_{\mathrm{AD}}],H_{\mathrm{AD}}\bigr]=0`$;
+a penalty on $`\dot\lambda^2`$; and a term that matches $`A_{\mathrm{CD}}`$ to
+$`\sum_\mu C_\mu P_\mu`$. Each definition, weight, and normalisation in the code
 is spelled out in the [method guide](docs/method.md).
 
 ## Install and run
@@ -60,7 +60,7 @@ quantum-pinn evaluate h2-d1.0
 With the first command, a small network takes 30 Adam updates on CPU, which
 lasts about a second, and its configuration, loss history, and weights are
 written to disk. The second command loads that run again, and the third
-evaluates the bundled H$_2$ model trained for the article. Every Hamiltonian
+evaluates the bundled H₂ model trained for the article. Every Hamiltonian
 and trained model ships with the repository, so nothing is fetched at run time.
 A good entry point is the [quickstart](docs/quickstart.md), followed by the
 [Jupyter tutorials](docs/examples/README.md); full runs of 500000 updates are
@@ -75,21 +75,21 @@ described in the [training guide](docs/training.md).
 </picture>
 
 Solid lines: Pauli coefficients of
-$H_{\mathrm{CD}}=\dot\lambda A_{\mathrm{CD}}$ that the network learned for
-H$_2$ at four bond distances. Dashed lines: the same schedule times the exact
-gauge potential $A_\lambda$, found by diagonalisation. Only the $XY$ and $YX$
+$`H_{\mathrm{CD}}=\dot\lambda A_{\mathrm{CD}}`$ that the network learned for
+H₂ at four bond distances. Dashed lines: the same schedule times the exact
+gauge potential $`A_\lambda`$, found by diagonalisation. Only the $`XY`$ and $`YX`$
 strings appear in the exact potential for this Hamiltonian, and their signs are
 opposite; the network finds both, and across the interior 80% of the evolution
 their relative error stays under 1%. In the lower panels the first and last 1%
-of the evolution are enlarged. The loss demands $H(0)=H_{\mathrm{initial}}$ and
-$H(1)=H_{\mathrm{final}}$, so the network turns the driving on and off inside
+of the evolution are enlarged. The loss demands $`H(0)=H_{\mathrm{initial}}`$ and
+$`H(1)=H_{\mathrm{final}}`$, so the network turns the driving on and off inside
 thin boundary layers. Between 1.0 and 2.0 Å the schedule does this work:
-$\dot\lambda$ climbs from zero and falls back to zero within the first and last
-0.3% of the evolution, and $A_{\mathrm{CD}}$ remains near the exact potential
+$`\dot\lambda`$ climbs from zero and falls back to zero within the first and last
+0.3% of the evolution, and $`A_{\mathrm{CD}}`$ remains near the exact potential
 throughout. At 2.5 Å the exact potential peaks at the start, and there the
-network suppresses $A_{\mathrm{CD}}$ over the first 1% instead, while
-$\dot\lambda$ is still close to 0.1. The largest matrix element of
-$H_{\mathrm{CD}}$ at $t=0$ and $t=1$ is under $2\times10^{-4}$ Ha, whereas its
+network suppresses $`A_{\mathrm{CD}}`$ over the first 1% instead, while
+$`\dot\lambda`$ is still close to 0.1. The largest matrix element of
+$`H_{\mathrm{CD}}`$ at $`t=0`$ and $`t=1`$ is under $`2\times10^{-4}`$ Ha, whereas its
 peaks lie between 0.23 and 2.8 Ha.
 
 ## The state stays in the ground state
@@ -100,16 +100,16 @@ peaks lie between 0.23 and 2.8 Ha.
   <img alt="Top row: the four instantaneous eigenvalues of the adiabatic Hamiltonian over time at four bond distances, with the energy expectation of the propagated state with and without the counterdiabatic term. Bottom row: population of the instantaneous ground state with and without the term." src="datasets/figures/energies-light.svg">
 </picture>
 
-Two propagations start from the ground state of $H_{\mathrm{initial}}$ (the
-Hartree–Fock Hamiltonian): one under $H(t)$ with the learned schedule and
+Two propagations start from the ground state of $`H_{\mathrm{initial}}`$ (the
+Hartree–Fock Hamiltonian): one under $`H(t)`$ with the learned schedule and
 potential, and one under the same schedule with the counterdiabatic term
-removed. Grey lines show the instantaneous eigenvalues of $H_{\mathrm{AD}}(t)$.
-Coloured curves show $\langle H_{\mathrm{AD}}(t)\rangle$ in the top row and, in
+removed. Grey lines show the instantaneous eigenvalues of $`H_{\mathrm{AD}}(t)`$.
+Coloured curves show $`\langle H_{\mathrm{AD}}(t)\rangle`$ in the top row and, in
 the bottom row, the population of the instantaneous ground state. In units of
-$\hbar/E_{\mathrm{h}}$ the whole evolution lasts 1, and over so short a time
+$`\hbar/E_{\mathrm{h}}`$ the whole evolution lasts 1, and over so short a time
 the uncorrected schedule loses 3% to 40% of the ground-state population.
 
-| Bond distance (Å) | Exact ground energy (Ha) | $\langle H_{\mathrm{final}}\rangle$ at $t=1$, with CD (Ha) | Relative error (%) | Ground population, with CD | Ground population, without CD |
+| Bond distance (Å) | Exact ground energy (Ha) | $`\langle H_{\mathrm{final}}\rangle`$ at $`t=1`$, with CD (Ha) | Relative error (%) | Ground population, with CD | Ground population, without CD |
 | ---: | ---: | ---: | ---: | ---: | ---: |
 | 1.0 | −1.101150 | −1.101150 | 2.2 × 10⁻⁷ | 1.000000 | 0.972 |
 | 1.5 | −0.998149 | −0.998149 | 8.4 × 10⁻⁶ | 0.999999 | 0.877 |
@@ -119,8 +119,8 @@ the uncorrected schedule loses 3% to 40% of the ground-state population.
 [`src/figures.py`](src/figures.py) recomputes these numbers from the stored
 predictions and writes them to
 [`evaluation.json`](datasets/figures/evaluation.json). Compared with Table 1 of
-the article, the eigenvalues of $H(t=1)$ differ by less than $1\times10^{-4}$
-Ha at 1.0 and 1.5 Å and by less than $5\times10^{-4}$ Ha at 2.0 and 2.5 Å. The
+the article, the eigenvalues of $`H(t=1)`$ differ by less than $`1\times10^{-4}`$
+Ha at 1.0 and 1.5 Å and by less than $`5\times10^{-4}`$ Ha at 2.0 and 2.5 Å. The
 propagated energy at 2.5 Å is −0.93603 Ha, nearer the exact value than the
 −0.9347 Ha reported in the article. Since the bundled runs are not the
 article's runs, [results](docs/results.md) lists how they differ.
@@ -133,13 +133,13 @@ article's runs, [results](docs/results.md) lists how they differ.
   <img alt="Left: the loss terms over 500001 Adam updates on log axes for H2 at 1.0 angstrom. Centre and right: the learned schedule lambda and its derivative over time for four bond distances; lambda is close to linear." src="datasets/figures/training-light.svg">
 </picture>
 
-(a) The loss terms over the 500001 Adam updates of the H$_2$ run at 1.0 Å,
+(a) The loss terms over the 500001 Adam updates of the H₂ run at 1.0 Å,
 sampled at 3000 log-spaced updates. The boundary, least-action, and Pauli terms
-drop under $10^{-4}$; the $\dot\lambda^2$ penalty levels off at its weight,
-which is 0.1 here because $\dot\lambda\approx1$. (b, c) Each schedule is nearly
-linear, with $\lambda(t)\approx t$ and $\dot\lambda\approx1$ away from the
-endpoints. Once $\lambda(0)=0$ and $\lambda(1)=1$ are fixed, the linear
-schedule exactly minimises $\int_0^1\dot\lambda^2\,\mathrm{d}t$. The penalty
+drop under $`10^{-4}`$; the $`\dot\lambda^2`$ penalty levels off at its weight,
+which is 0.1 here because $`\dot\lambda\approx1`$. (b, c) Each schedule is nearly
+linear, with $`\lambda(t)\approx t`$ and $`\dot\lambda\approx1`$ away from the
+endpoints. Once $`\lambda(0)=0`$ and $`\lambda(1)=1`$ are fixed, the linear
+schedule exactly minimises $`\int_0^1\dot\lambda^2\,\mathrm{d}t`$. The penalty
 therefore drives the schedule towards constant speed, and the gauge potential
 takes care of correcting the dynamics. In the article this outcome is described
 as a FAQUAD-like protocol.

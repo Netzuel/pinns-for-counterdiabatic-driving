@@ -18,10 +18,10 @@ in [`hamiltonians.h5`](../datasets/hamiltonians.h5) under
 
 `final` is the molecular Hamiltonian in the STO-3G basis. `initial` is its
 diagonal in the computational basis, which the article names the Hartree–Fock
-Hamiltonian. It retains the $I$ and $Z$ strings and removes the off-diagonal
-couplings ($XX$ for H$_2$), so its ground state is a computational basis state.
+Hamiltonian. It retains the $`I`$ and $`Z`$ strings and removes the off-diagonal
+couplings ($`XX`$ for H₂), so its ground state is a computational basis state.
 According to the article (Appendix C), both matrices were generated with
-Qiskit. The two-qubit H$_2$ form, built from the strings $II, IZ, ZI, ZZ, XX$,
+Qiskit. The two-qubit H₂ form, built from the strings $`II, IZ, ZI, ZZ, XX`$,
 agrees with the parity mapping with two-qubit reduction, and its ground
 energies agree with STO-3G full-configuration-interaction energies that include
 nuclear repulsion. Neither the original generation script nor the LiH
@@ -41,15 +41,15 @@ been independently confirmed.
 
 ## Stored results
 
-The predictions of the article's H$_2$ runs, on 10000 uniform times, are in
+The predictions of the article's H₂ runs, on 10000 uniform times, are in
 [`results/h2-trajectories.h5`](../datasets/results/h2-trajectories.h5):
 
 | Path | Shape | Meaning |
 | --- | --- | --- |
-| `/{1.0,1.5,2.0,2.5}/time` | (10000,) | $t\in[0,1]$ |
-| `…/schedule`, `…/schedule_rate` | (10000,) | $\lambda$ and $\dot\lambda$ |
-| `…/potential` | (10000, 4, 4) complex | $A_{\mathrm{CD}}$ |
-| `…/coefficients` | (10000, 16) | $C_\mu$ in the order of `pauli_strings(2)` |
+| `/{1.0,1.5,2.0,2.5}/time` | (10000,) | $`t\in[0,1]`$ |
+| `…/schedule`, `…/schedule_rate` | (10000,) | $`\lambda`$ and $`\dot\lambda`$ |
+| `…/potential` | (10000, 4, 4) complex | $`A_{\mathrm{CD}}`$ |
+| `…/coefficients` | (10000, 16) | $`C_\mu`$ in the order of `pauli_strings(2)` |
 | `…` attribute `training_seconds` | scalar | recorded wall time |
 | `/history/{total,initial,final,least_action,schedule_rate,pauli,hermiticity}` | (500001,) | loss before each update of the 1.0 Å run |
 

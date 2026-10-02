@@ -9,9 +9,9 @@
 | `src/figures.py` | all result figures and `evaluation.json` | `python src/figures.py` |
 | `src/diagrams/` | TikZ architecture diagram and renderer | `bash src/diagrams/render.sh` |
 | `src/verify.py` | privacy audit and data checksums | `python src/verify.py` |
-| `datasets/hamiltonians.h5` | H$_2$ and LiH Hamiltonians | training, analysis |
+| `datasets/hamiltonians.h5` | H₂ and LiH Hamiltonians | training, analysis |
 | `datasets/pretrained/` | six trained models | `load_pretrained` |
-| `datasets/results/` | stored H$_2$ trajectories, loss history, scalability table | analysis, figures |
+| `datasets/results/` | stored H₂ trajectories, loss history, scalability table | analysis, figures |
 | `datasets/experiments.json` | 52 named training configurations | `quantum-pinn train --experiment` |
 | `datasets/figures/` | light and dark SVG figures, `evaluation.json` | README, results guide |
 | `datasets/runs/` | new training runs, ignored by Git | users |

@@ -1,7 +1,7 @@
 # Verification
 
-Bundled with the repository are 14 Hamiltonian pairs for H$_2$ and LiH, six
-trained models, the article's stored H$_2$ trajectories and loss history, the
+Bundled with the repository are 14 Hamiltonian pairs for H₂ and LiH, six
+trained models, the article's stored H₂ trajectories and loss history, the
 46-run scalability table, 52 training configurations, and three tutorials. The
 scientific comparison is in [results](../docs/results.md), and the role of each
 file is in the [repository map](repository-map.md).
@@ -20,7 +20,7 @@ python src/verify.py
 What the tests check:
 
 - the Pauli basis, the exact gauge potential (required to satisfy the
-  least-action condition within $10^{-10}$), and propagation that preserves the
+  least-action condition within $`10^{-10}`$), and propagation that preserves the
   norm;
 - the loss, compared on a bundled model with values from the original research
   implementation;

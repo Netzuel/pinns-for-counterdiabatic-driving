@@ -20,8 +20,8 @@ updates on 32 collocation points. Inside the run directory you will find
 | `history.npz` | every loss term at every update and the training time in seconds |
 | `model.pt` | configuration and weights, loadable with `weights_only=True` |
 
-Evaluation prints $\lambda$ at both endpoints and the largest deviation of
-$H(0)$ and $H(1)$ from their target Hamiltonians. With only 30 updates the
+Evaluation prints $`\lambda`$ at both endpoints and the largest deviation of
+$`H(0)`$ and $`H(1)`$ from their target Hamiltonians. With only 30 updates the
 values are nowhere near converged, so this run tests the workflow and nothing
 more. Give every run its own output directory; Git ignores `datasets/runs/`.
 
